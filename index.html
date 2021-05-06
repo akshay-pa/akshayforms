@@ -1,0 +1,138 @@
+<html>
+
+<head>
+    <title>College Form</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: #D9AFD9;
+        background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .date {
+        margin-left: 10px;
+        margin-top: 16px;
+    }
+
+    .date1 {
+        padding-left: 40px;
+    }
+
+    .heading {
+        margin-left: 200px;
+    }
+
+    #details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 17px;
+    }
+
+    #details input {
+        border: 2px solid #8181c4;
+        border-radius: 5px;
+    }
+
+    .course {
+        border: 2px solid #8181c4;
+        border-radius: 5px;
+        margin-left: 40px;
+    }
+
+    .detail {
+        padding-top: 10px;
+        font-size: 20px;
+        margin-left: 40px;
+    }
+    .date {
+        margin-left: 40px;
+    }
+    button{
+        border: 2px solid black;
+        font-weight: bold;
+        cursor: pointer;
+        width: 200px;
+        height: 40px;
+    }
+    button:hover{
+        background-color: #D9AFD9;
+    }
+</style>
+
+<body>
+    <div class="collegeForm">
+        <div class="logo">
+            <img src="sd-logo.png" alt="">
+        </div>
+        <div class="date">
+            Form No. <input type="text" name="formNo" id="Num">
+            Date: <input type="date" name="" id="">
+        </div>
+        <div.heading>
+            <h1
+                style="margin-left: 700px; display: inline-block; margin-top: 15px; border: 3px solid red; color: purple;">
+                Admission Form</h1>
+    </div>
+    <h3 style="margin-left: 40px;">Particulars of student (IN BLOCK LETTERS)</h3>
+    <div id="details">
+        <form action="">
+            <div class="detail">Surame: <input type="text" name="surname" id="sur"  required ></div>
+            <div class="detail">Name: <input type="text" name="surname"   ></div>
+            <div class="detail">Father's Name: <input type="text" name="father"   ></div>
+            <div class="detail">Mother's Name: <input type="text" name="mother"   ></div>
+            <div class="detail">Adhar Card No: <input type="text" name="adhar"   ></div>
+            <div class="detail">Date of Birth: <input type="date" name="birth"   ></div>
+            <div class="detail">(IN WORDS): <input type="text" name="words"   ></div>
+            <div class="detail">Upload Your Photo(only in png and jpeg format)<input type="file" name="photo"
+                    style="padding-left: 40px; border: none;"   ></div>
+            <div class="detail">Place of Birth<input type="text" name="birthPlace"   > City <input type="text"
+                    name="city"   >
+                Dist <input type="text" name="Dist"   >State <input type="text" name="state"   ></div>
+            <div class="detail">physical problems/Disability (if any): <input type="text" name="physical"   >
+            </div>
+            <div class="detail">Caste: <input type="text" name="caste"   >Mother Tongue: <input type="text"
+                    name="tongue"   >
+            </div>
+            <div class="detail">Category: <input type="text" name="Category"   >Religion: <input type="text"
+                    name="religion"   >
+            </div>
+            <div class="detail">Surame: <input type="text" name="surname"   ></div>
+            <div class="detail">Name of the School Last Attended: <input type="text" name="lastSchool"   ></div>
+            <div class="detail">Standard to which admission is sought: <input type="text" name="sought"   ></div>
+            <div class="detail">Residental Address: <input type="text" name="resident"   ></div>
+            <div class="hostel detail">
+                You Want Hostel Or Not: <input type="radio" name="radio" id="radioID1"> Yes <input type="radio" name="radio" id="radioID2"> No
+            </div>
+            <h1 class="detail">Choose Your Course</h1>
+            <select name="course" class="detail course"   >
+                <option value="BCA">BCA</option>
+                <option value="Computer Science">Computer Science</option>
+                <option value="Electrical Engineering">Electrical Engineering</option>
+                <option value="Economics Hons.">Economics Hons.</option>
+                <option value="B.COM">B.COM</option>
+            </select>
+            <div class="detail submit">
+                <a href="#"><button type="reset">Reset</button></a>
+            </div>
+            <div class="detail submit">
+                <a href="#"><button type="submit" onclick="sum()">Submit The Form</button></a>
+            </div>
+            
+        </form>
+    </div>
+
+</body>
+<script src="app.js"></script>
+
+</html>
